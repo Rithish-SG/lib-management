@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- d) Progressive Web Application (PWA) Manifest & Theme -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="CampusLibrary" />
+
+    <!-- f) Security: Content Security Policy (CSP) & Secure Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:;" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+    <!-- Title & SEO Description -->
+    <title>Campus Central Library - Experiment 10 (Optimized PWA)</title>
+    <meta name="description" content="Campus Central Library - Optimized with Lazy Loading, Code Splitting, PWA, Accessibility, and Security." />
+  </head>
+  <body>
+    <!-- e) Accessibility: Skip to main content link for screen readers and keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
